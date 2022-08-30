@@ -1,0 +1,5 @@
+CREATE DATABASE login;
+
+CREATE TABLE `login`.`users` ( `userId` INT(10) NOT NULL AUTO_INCREMENT , `firstName` VARCHAR(128) NOT NULL , `lastName` VARCHAR(128) NOT NULL , `email` VARCHAR(128) NOT NULL , `password` VARCHAR(128) NOT NULL , `passToken` longtext NOT NULL , `created` varchar(20) NOT NULL , PRIMARY KEY (`userId`)) ENGINE = InnoDB;
+
+CREATE TABLE `login`.`pwdresets` ( `pwdResetId` INT(10) NOT NULL AUTO_INCREMENT , `pwdResetEmail` TEXT NOT NULL , `pwdResetSelector` TEXT NOT NULL , `pwdResetToken` LONGTEXT NOT NULL , `pwdResetExpires` TEXT NOT NULL , PRIMARY KEY (`pwdResetId`)) ENGINE = InnoDB;
