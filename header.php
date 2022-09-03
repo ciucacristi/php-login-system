@@ -1,7 +1,5 @@
 <?php 
-include "classes/dbh-classes.php";
-include "classes/login-classes.php";
-include "classes/login-control-classes.php";
+include "inc/autoloader.php";
 session_start();
 
 if (!isset($_SESSION['userid'])) {
